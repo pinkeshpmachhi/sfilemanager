@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="40dp"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Details"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="20dp"
+            android:id="@+id/fileDetailsTVDetailDialog"/>
+
+        <TextView
+            android:layout_below="@+id/fileDetailsTVDetailDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="File name"
+            android:textSize="18sp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="20dp"
+            android:id="@+id/filenameTVDetailDialog"/>
+
+        <TextView
+            android:layout_below="@+id/filenameTVDetailDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="File location: c/sdcard"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/filepathTVDetailDialog"/>
+
+        <TextView
+            android:layout_below="@+id/filepathTVDetailDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Size: 1.20 MB"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/filesizeTVDetailDialog"/>
+
+        <TextView
+            android:layout_below="@+id/filesizeTVDetailDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Last modified: kkk kkk kkk at 55544"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/fileLastModifiedTVDetailDialog"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#D3F1F4"
+            android:layout_marginTop="30dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="15dp"
+            android:elevation="15dp"
+            android:layout_below="@+id/fileLastModifiedTVDetailDialog"
+            android:layout_alignParentRight="true">
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:id="@+id/closeBtnDetailDialog"
+                android:text="ok"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
